@@ -10,13 +10,17 @@ import { PlayerService } from '../player.service';
 export class PlayerListsComponent implements OnInit {
 
   gks : Player[];
+  drs : Player[];
+  dcrs : Player[];
 
   constructor(private playerService: PlayerService) { 
 
   }
 
   ngOnInit() {
-    this.gks = this.playerService.getRecipes();
+    this.gks = this.playerService.getGk();
+    this.drs = this.playerService.getDr();
+    this.dcrs = this.playerService.getDcr();
   }
 
 }

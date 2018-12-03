@@ -3,12 +3,12 @@ import { Player } from '../../player.model';
 import { PlayerService } from '../../player.service';
 
 @Component({
-  selector: 'app-dr',
-  templateUrl: './dr.component.html',
-  styleUrls: ['./dr.component.css']
+  selector: 'app-dcr',
+  templateUrl: './dcr.component.html',
+  styleUrls: ['./dcr.component.css']
 })
-export class DrComponent implements OnInit {
-  @Input() dr: Player;
+export class DcrComponent implements OnInit {
+  @Input() dcr: Player;
 
   constructor(private playerService: PlayerService) { }
 
@@ -16,7 +16,7 @@ export class DrComponent implements OnInit {
   }
 
   onSelected(){
-    this.playerService.drSelected.emit(this.dr);
+    this.playerService.dcrSelected.emit(this.dcr);
   }
 
 }

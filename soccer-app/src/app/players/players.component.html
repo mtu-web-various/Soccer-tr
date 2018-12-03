@@ -1,9 +1,13 @@
 <div class="row">
   <div class="col-md-2">
-    <app-player-lists></app-player-lists>
+      <div style="overflow:scroll; height:800px;">
+      <app-player-lists></app-player-lists>
+    </div>
   </div>
   <div class="col-md-10">
     <app-pitch
-      [gk]="selectedGk"></app-pitch>
+      [gk]="selectedGk"
+      [dr]="selectedDr"
+      [dcr]="selectedDcr"></app-pitch>
   </div>
 </div>

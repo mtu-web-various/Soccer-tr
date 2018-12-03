@@ -11,7 +11,19 @@
       <th scope="row">DR</th>
     </tr>
     <tr>
-      <td>Jacob</td>
+        <app-dr
+        *ngFor = "let player of drs"
+        [dr] = "player"
+        ></app-dr>
+    </tr>
+    <tr>
+        <th scope="row">DCR</th>
+      </tr>
+    <tr>
+        <app-dcr
+        *ngFor = "let player of dcrs"
+        [dcr] = "player"
+        ></app-dcr>
     </tr>
    
   </tbody>

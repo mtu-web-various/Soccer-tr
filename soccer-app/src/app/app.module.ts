@@ -8,6 +8,8 @@ import { PitchComponent } from './players/pitch/pitch.component';
 import { PlayerListsComponent } from './players/player-lists/player-lists.component';
 import { GkComponent } from './players/player-lists/gk/gk.component';
 import { DrComponent } from './players/player-lists/dr/dr.component';
+import { DcrComponent } from './players/player-lists/dcr/dcr.component';
+import { DclComponent } from './players/player-lists/dcl/dcl.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { DrComponent } from './players/player-lists/dr/dr.component';
     PitchComponent,
     PlayerListsComponent,
     GkComponent,
-    DrComponent
+    DrComponent,
+    DcrComponent,
+    DclComponent
   ],
   imports: [
     BrowserModule

@@ -3,14 +3,34 @@ import { EventEmitter } from '@angular/core';
 
 export class PlayerService{
     gkSelected = new EventEmitter<Player>();
+    drSelected = new EventEmitter<Player>();
+    dcrSelected = new EventEmitter<Player>();
 
     private gks : Player[] = [
-        new Player("Muslera", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzuSqvXVGvzUsMpFkGW69DYOWHv00kzE6e4s00riyox2sit5Iqww"),
-        new Player("Karius", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_yQqRA7YDW0cN4gRjM2IPSL6HT6itPPSyTibgecoEke6DUx5YQ")    
+        new Player("Muslera", "https://futhead.cursecdn.com/static/img/14/players/wc/182494.png"),
+        new Player("Karius", "https://fifaaddict.com/fo3img/players/p203775.png?2018")
     ];
 
-    getRecipes(){
+    private drs : Player[] = [
+        new Player("Mariano", "https://www.pesmaster.com/pes-2018/graphics/players/player_43746.png"),
+        new Player("Gokhan", "http://i54.tinypic.com/2ebtu86.png")    
+    ]
+
+    private dcrs : Player[] = [
+        new Player("Skrtel", "https://www.pesmaster.com/pes-2018/graphics/players/player_32828.png"),
+        new Player("Pepe", "https://fifaaddict.com/fo3img/players/p9120533.png?2018") 
+    ]
+
+    getGk(){
         return this.gks.slice();
+    }
+
+    getDr(){
+        return this.drs.slice();
+    }
+
+    getDcr(){
+        return this.dcrs.slice();
     }
     
 }
