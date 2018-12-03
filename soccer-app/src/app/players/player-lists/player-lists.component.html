@@ -25,6 +25,25 @@
         [dcr] = "player"
         ></app-dcr>
     </tr>
+    <tr>
+      <th scope="row">DCL</th>
+    </tr>
+    <tr>
+      <app-dcl
+      *ngFor = "let player of dcrs"
+      [dcl] = "player"
+      ></app-dcl>
+    </tr>
+    <tr>
+      <th scope="row">DL</th>
+    </tr>
+    <tr>
+      <app-dl
+      *ngFor = "let player of drs"
+      [dl] = "player"
+      ></app-dl>
+    </tr>
+  
    
   </tbody>
 </table>

@@ -12,6 +12,8 @@ export class PlayersComponent implements OnInit {
   selectedGk: Player;
   selectedDr: Player;
   selectedDcr: Player;
+  selectedDcl: Player;
+  selectedDl: Player;
 
   constructor(private playerService: PlayerService) { }
 
@@ -31,6 +33,18 @@ export class PlayersComponent implements OnInit {
     this.playerService.dcrSelected.subscribe(
       (dcr: Player) => {
         this.selectedDcr = dcr;
+      }
+    );
+
+    this.playerService.dclSelected.subscribe(
+      (dcl: Player) => {
+        this.selectedDcl = dcl;
+      }
+    );
+
+    this.playerService.dlSelected.subscribe(
+      (dl: Player) => {
+        this.selectedDl = dl;
       }
     );
 

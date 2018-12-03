@@ -5,6 +5,8 @@ export class PlayerService{
     gkSelected = new EventEmitter<Player>();
     drSelected = new EventEmitter<Player>();
     dcrSelected = new EventEmitter<Player>();
+    dclSelected = new EventEmitter<Player>();
+    dlSelected = new EventEmitter<Player>();
 
     private gks : Player[] = [
         new Player("Muslera", "https://futhead.cursecdn.com/static/img/14/players/wc/182494.png"),
@@ -32,5 +34,6 @@ export class PlayerService{
     getDcr(){
         return this.dcrs.slice();
     }
+
     
 }

@@ -1,34 +1,52 @@
 <table class="table table-borderless">
   <tbody>
     <tr>
-      <td class="col-md-2"></td>
-      <td class="col-md-2"></td>
-      <td class="col-md-2">
+      <td class="col-md"></td>
+      <td class="col-md"></td>
+      <td class="col-md">
         <div class="card text-center">
-            <img class="img-responsive" [src]= "gk.imagePath" >
-            <h4 class="card-title" >{{gk.name}}</h4>
+            <img [src]= "gk.imagePath" >
+            <h4 class="card-title"  >{{gk.name}}</h4>
         </div>
       </td>
-      <td class="col-md-2"></td>
-      <td class="col-md-2"></td>
+      <td class="col-md"></td>
+      <td class="col-md"></td>
     </tr>
 
     <tr>
-        <td class="col-md-2">
+        <td class="col-md"></td>
+        <td class="col-md">
           <div class="card text-center">
-              <img class="img-responsive" [src]= "dr.imagePath" alt="Card image cap">
-              <h4 class="card-title" >{{dr.name}}</h4>
-          </div>
-        </td>
-        <td class="col-md-2">
-          <div class="card text-center">
-              <img class="img-responsive" [src]= "dcr.imagePath" alt="Card image cap">
+              <img [src]= "dcr.imagePath" alt="Card image cap">
               <h4 class="card-title" >{{dcr.name}}</h4>
           </div>
         </td>
+        <td class="col-md"></td>
+        <td class="col-md">
+          <div class="card text-center">
+            <img [src]= "dcl.imagePath" alt="Card image cap">
+            <h4 class="card-title" >{{dcl.name}}</h4>
+        </div>
+        </td>
         <td class="col-md-2"></td>
-        <td class="col-md-2"></td>
-        <td class="col-md-2"></td>
+      </tr>
+
+      <tr>
+        <td class="col-md">
+          <div class="card text-center">
+            <img [src]= "dr.imagePath" >
+            <h4 class="card-title"  >{{dr.name}}</h4>
+        </div>
+        </td>
+        <td class="col-md"></td>
+        <td class="col-md"></td>
+        <td class="col-md"></td>
+        <td class="col-md-2">
+          <div class="card text-center">
+            <img [src]= "dl.imagePath" >
+            <h4 class="card-title"  >{{dl.name}}</h4>
+        </div>
+        </td>
       </tr>
 
   </tbody>

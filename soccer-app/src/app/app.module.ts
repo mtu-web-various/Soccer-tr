@@ -10,6 +10,8 @@ import { GkComponent } from './players/player-lists/gk/gk.component';
 import { DrComponent } from './players/player-lists/dr/dr.component';
 import { DcrComponent } from './players/player-lists/dcr/dcr.component';
 import { DclComponent } from './players/player-lists/dcl/dcl.component';
+import { DlComponent } from './players/player-lists/dl/dl.component';
+import { DmcComponent } from './players/player-lists/dmc/dmc.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { DclComponent } from './players/player-lists/dcl/dcl.component';
     GkComponent,
     DrComponent,
     DcrComponent,
-    DclComponent
+    DclComponent,
+    DlComponent,
+    DmcComponent
   ],
   imports: [
     BrowserModule

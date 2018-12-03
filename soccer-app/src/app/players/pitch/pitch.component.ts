@@ -10,13 +10,17 @@ export class PitchComponent implements OnInit {
   @Input() gk: Player;
   @Input() dr: Player;
   @Input() dcr: Player;
+  @Input() dcl: Player;
+  @Input() dl: Player;
   
   constructor() { }
 
   ngOnInit() {
     this.gk = new Player("?","https://image.freepik.com/free-icon/question-mark_318-139902.jpg");
-    this.dr = new Player("?","https://image.freepik.com/free-icon/question-mark_318-139902.jpg");
     this.dcr = new Player("?","https://image.freepik.com/free-icon/question-mark_318-139902.jpg");
+    this.dcl = new Player("?","https://image.freepik.com/free-icon/question-mark_318-139902.jpg");
+    this.dr = new Player("?","https://image.freepik.com/free-icon/question-mark_318-139902.jpg");
+    this.dl = new Player("?","https://image.freepik.com/free-icon/question-mark_318-139902.jpg");
   }
 
 }

@@ -12,6 +12,7 @@ export class PlayerListsComponent implements OnInit {
   gks : Player[];
   drs : Player[];
   dcrs : Player[];
+  
 
   constructor(private playerService: PlayerService) { 
 

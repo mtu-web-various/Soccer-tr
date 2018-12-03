@@ -3,12 +3,12 @@ import { Player } from '../../player.model';
 import { PlayerService } from '../../player.service';
 
 @Component({
-  selector: 'app-dcl',
-  templateUrl: './dcl.component.html',
-  styleUrls: ['./dcl.component.css']
+  selector: 'app-dl',
+  templateUrl: './dl.component.html',
+  styleUrls: ['./dl.component.css']
 })
-export class DclComponent implements OnInit {
-  @Input() dcl: Player;
+export class DlComponent implements OnInit {
+  @Input() dl: Player;
 
   constructor(private playerService: PlayerService) { }
 
@@ -16,7 +16,7 @@ export class DclComponent implements OnInit {
   }
 
   onSelected(){
-    this.playerService.dclSelected.emit(this.dcl);
+    this.playerService.dlSelected.emit(this.dl);
   }
 
 }
