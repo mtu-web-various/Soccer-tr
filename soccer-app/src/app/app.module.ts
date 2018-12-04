@@ -12,6 +12,11 @@ import { DcrComponent } from './players/player-lists/dcr/dcr.component';
 import { DclComponent } from './players/player-lists/dcl/dcl.component';
 import { DlComponent } from './players/player-lists/dl/dl.component';
 import { DmcComponent } from './players/player-lists/dmc/dmc.component';
+import { McrComponent } from './players/player-lists/mcr/mcr.component';
+import { MclComponent } from './players/player-lists/mcl/mcl.component';
+import { FcrComponent } from './players/player-lists/fcr/fcr.component';
+import { FclComponent } from './players/player-lists/fcl/fcl.component';
+import { FcComponent } from './players/player-lists/fc/fc.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import { DmcComponent } from './players/player-lists/dmc/dmc.component';
     DcrComponent,
     DclComponent,
     DlComponent,
-    DmcComponent
+    DmcComponent,
+    McrComponent,
+    MclComponent,
+    FcrComponent,
+    FclComponent,
+    FcComponent
   ],
   imports: [
     BrowserModule

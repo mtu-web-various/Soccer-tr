@@ -12,6 +12,12 @@ export class PitchComponent implements OnInit {
   @Input() dcr: Player;
   @Input() dcl: Player;
   @Input() dl: Player;
+  @Input() dmc: Player;
+  @Input() mcr: Player;
+  @Input() mcl: Player;
+  @Input() fc: Player;
+  @Input() fcr: Player;
+  @Input() fcl: Player;
   
   constructor() { }
 
@@ -21,6 +27,12 @@ export class PitchComponent implements OnInit {
     this.dcl = new Player("?","https://image.freepik.com/free-icon/question-mark_318-139902.jpg");
     this.dr = new Player("?","https://image.freepik.com/free-icon/question-mark_318-139902.jpg");
     this.dl = new Player("?","https://image.freepik.com/free-icon/question-mark_318-139902.jpg");
+    this.dmc = new Player("?","https://image.freepik.com/free-icon/question-mark_318-139902.jpg");
+    this.mcr = new Player("?","https://image.freepik.com/free-icon/question-mark_318-139902.jpg");
+    this.mcl = new Player("?","https://image.freepik.com/free-icon/question-mark_318-139902.jpg");
+    this.fc = new Player("?","https://image.freepik.com/free-icon/question-mark_318-139902.jpg");
+    this.fcr = new Player("?","https://image.freepik.com/free-icon/question-mark_318-139902.jpg");
+    this.fcl = new Player("?","https://image.freepik.com/free-icon/question-mark_318-139902.jpg");
   }
 
 }

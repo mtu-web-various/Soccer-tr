@@ -12,7 +12,8 @@ export class PlayerListsComponent implements OnInit {
   gks : Player[];
   drs : Player[];
   dcrs : Player[];
-  
+  mcs : Player[];
+  fcs : Player[];
 
   constructor(private playerService: PlayerService) { 
 
@@ -22,6 +23,8 @@ export class PlayerListsComponent implements OnInit {
     this.gks = this.playerService.getGk();
     this.drs = this.playerService.getDr();
     this.dcrs = this.playerService.getDcr();
+    this.mcs = this.playerService.getMc();
+    this.fcs = this.playerService.getFc();
   }
 
 }

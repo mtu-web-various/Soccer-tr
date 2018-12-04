@@ -3,12 +3,12 @@ import { Player } from '../../player.model';
 import { PlayerService } from '../../player.service';
 
 @Component({
-  selector: 'app-dmc',
-  templateUrl: './dmc.component.html',
-  styleUrls: ['./dmc.component.css']
+  selector: 'app-mcr',
+  templateUrl: './mcr.component.html',
+  styleUrls: ['./mcr.component.css']
 })
-export class DmcComponent implements OnInit {
-  @Input() dmc: Player;
+export class McrComponent implements OnInit {
+  @Input() mcr: Player;
 
   constructor(private playerService: PlayerService) { }
 
@@ -16,7 +16,7 @@ export class DmcComponent implements OnInit {
   }
 
   onSelected(){
-    this.playerService.dmcSelected.emit(this.dmc);
+    this.playerService.mcrSelected.emit(this.mcr);
   }
 
 }

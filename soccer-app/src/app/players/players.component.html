@@ -1,15 +1,21 @@
 <div class="row">
-  <div class="col-md-2">
-      <div style="overflow:scroll; height:800px;">
+  <div class="col-md-3">
+      <div style="overflow:scroll; height:900px;">
       <app-player-lists></app-player-lists>
     </div>
   </div>
-  <div class="col-md-10">
+  <div class="col-md-9">
     <app-pitch
       [gk]="selectedGk"
       [dcr]="selectedDcr"
       [dcl]="selectedDcl"
       [dr]="selectedDr"
-      [dl]="selectedDl"></app-pitch>
+      [dl]="selectedDl"
+      [dmc]="selectedDmc"
+      [mcr]="selectedMcr"
+      [mcl]="selectedMcl"
+      [fcr]="selectedFcr"
+      [fcl]="selectedFcl"
+      [fc]="selectedFc"></app-pitch>
   </div>
 </div>

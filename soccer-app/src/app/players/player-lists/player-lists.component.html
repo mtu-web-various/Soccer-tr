@@ -43,7 +43,66 @@
       [dl] = "player"
       ></app-dl>
     </tr>
+
+    <tr>
+      <th scope="row">DMC</th>
+    </tr>
+    <tr>
+      <app-dmc
+      *ngFor = "let player of mcs"
+      [dmc] = "player"
+      ></app-dmc>
+    </tr>
+
+    <tr>
+      <th scope="row">MCR</th>
+    </tr>
+    <tr>
+      <app-mcr
+      *ngFor = "let player of mcs"
+      [mcr] = "player"
+      ></app-mcr>
+    </tr>
+
+    <tr>
+      <th scope="row">MCL</th>
+    </tr>
+    <tr>
+      <app-mcl
+      *ngFor = "let player of mcs"
+      [mcl] = "player"
+      ></app-mcl>
+    </tr>
+
+    <tr>
+      <th scope="row">FCR</th>
+    </tr>
+    <tr>
+      <app-fcr
+      *ngFor = "let player of fcs"
+      [fcr] = "player"
+      ></app-fcr>
+    </tr>
+
+    <tr>
+      <th scope="row">FCL</th>
+    </tr>
+    <tr>
+      <app-fcl
+      *ngFor = "let player of fcs"
+      [fcl] = "player"
+      ></app-fcl>
+    </tr>
   
+    <tr>
+      <th scope="row">ST</th>
+    </tr>
+    <tr>
+      <app-fc
+      *ngFor = "let player of fcs"
+      [fc] = "player"
+      ></app-fc>
+    </tr>
    
   </tbody>
 </table>
